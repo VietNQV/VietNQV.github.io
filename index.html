@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NguyenQuocViet</title>
+  <link rel="stylesheet" href="public/css/styles.css">
+  <link rel="stylesheet" href="public/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/bf6b25bcf9.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="public/images//icon-website.png"/>
+</head>
+
+<body>
+  <header>
+    <div id="top"></div>
+    <!--Contact-->
+    <div class="contact bg-gray d-none d-md-block" id="topLinkTrigger">
+      <div class="container d-md-flex justify-content-between">
+        <div class="col-12 col-md-6">
+          <ul class="list-inline d-flex text-white">
+            <li>
+              <i class="fas fa-map-marker-alt color-yellow"></i>
+              <a href="#" class="text-decoration-none text-white hover-yellow">Address: 4578 Marmora Road, Glasgow, D04 89GR</a>
+            </li>
+            <li class="ps-3">
+              <i class="fas fa-phone-alt color-yellow"></i>
+              <a href="#" class="text-decoration-none text-white hover-yellow">(800) 123-0045</a>
+              <span>;</span>
+              <a href="#" class="text-decoration-none text-white hover-yellow">(800) 123-0045</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-2">
+          <ul class="list-inline d-flex float-end">
+            <li><a href="#" class="fa fa-facebook text-white text-decoration-none pe-3 hover-yellow"></a></li>
+            <li><a href="#" class="fab fa-twitter text-white text-decoration-none pe-3 hover-yellow"></a></li>
+            <li><a href="#" class="fab fa-google-plus-g text-white text-decoration-none pe-3 hover-yellow"></a></li>
+            <li><a href="#" class="fa fa-vimeo text-white text-decoration-none pe-3 hover-yellow"></a></li>
+            <li><a href="#" class="fa fa-youtube text-white text-decoration-none pe-3 hover-yellow"></a></li>
+            <li><a href="#" class="fa fa-pinterest text-white text-decoration-none pe-3 hover-yellow"></a></li>
+          </ul>  
+        </div>
+      </div>  
+    </div>
+    <!--Navbar-->
+    <div class="header-inner">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark p-2 p-md-4 bg-gray">
+          <div class="container">
+            <div class="col-2 d-md-none">
+              <button class="navbar-toggler p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+            <div class="col-8 col-md-3">
+              <a class="navbar-brand" href="#">
+                <img src="public/images/logo-inverse-659x78.png" class="img-fluid" alt="">
+              </a>  
+            </div>
+            <div class="col-2 text-end">
+              <a href="#topLinkTrigger" class="d-md-none">
+                <i class="fa fa-ellipsis-v text-light"></i>
+              </a>  
+            </div>
+            <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+              <form class="d-flex px-md-3 px-0 pt-md-0 pt-3">
+                <div class="col-11 d-md-none">
+                  <input class="form-control d-md-none" type="search" placeholder="Search" aria-label="Search">
+                </div>
+                <div class="col-1">
+                  <button class="btn dropdown-items d-md-none text-light" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>  
+                </div>
+                <i class="fas fa-search icon-search d-none d-md-block" id="show-search"></i>
+              </form>
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-uppercase color-yellow" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Home
+                </a>
+                  <ul class="dropdown-content dropdown-menu bg-gray">
+                    <li><a class="dropdown-items text-light" href="#">Headers</a></li>
+                    <li><a class="dropdown-items text-light" href="#">Footers</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-uppercase" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-uppercase text-light" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                  </a>
+                  <ul class="dropdown-content dropdown-menu bg-gray">
+                    <li><a class="dropdown-items text-light" href="#">Single Service</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-uppercase text-light" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Projects
+                  </a>
+                  <ul class="dropdown-content dropdown-menu bg-gray">
+                    <li><a class="dropdown-items text-light" href="#">Project Category</a></li>
+                    <li><a class="dropdown-items text-light" href="#">Single Project</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown has-megamenu">
+                  <a class="nav-link dropdown-toggle text-uppercase text-light" href="#" data-bs-toggle="dropdown">Pages</a>
+                  <div class="container dropdown-content dropdown-menu megamenu bg-gray" role="menu">
+                    <div class="row">
+                      <div class="col-6 col-md-3">
+                        <h6 class="dropdown-title">GENERAL</h6>
+                        <ul class="list-unstyled">
+                          <li>
+                            <a href="#" class="dropdown-items text-light">About</a>
+                          </li>
+                          <li>
+                            <a href="#" class="dropdown-items text-light">Our Team</a>
+                          </li>
+                          <li>
+                            <a href="#" class="dropdown-items text-light">Team Member Profile</a>
+                          </li>
+                          <li>
+                            <a href="#" class="dropdown-items text-light">Services</a>
+                          </li>
+                          <li>
+                            <a href="#" class="dropdown-items text-light">Single service</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-6 col-md-3">
+                        <h6 class="dropdown-title">SPECIAL PAGES</h6>
+                        <ul class="list-unstyled">
+                          <li>
+                            <a href="#" class="dropdown-items text-light">404 Page</a>
+                          </li>
+                          <li>
+                            <a href="#" class="dropdown-items text-light">Search Results</a>
+                          </li>
+                          <li>
+                            <a href="#" class="dropdown-items text-light">Coming Soon</a>
+                          </li>
+                          <li>
+                            <a href="#" class="dropdown-items text-light">Privacy Policy</a>
+                          </li>
+                        </ul>
+                        
+                      </div>
+                      <div class="col-6 col-md-3">
+                        <h6 class="dropdown-title">ELEMENTS #1</h6>
+                        <ul class="list-unstyled">
+                          <li>
+                            <a href="#" class="dropdown-items text-light">Accordion</a>
+                          </li>
+                          <li>
+                            <a href="#" class="dropdown-items text-light">Tabs</a>
+                          </li>
+                          <li>
+                            <a href="#" class="dropdown-items text-light">Buttons</a>
+                          </li>
+                          <li>
+                            <a href="#" class="dropdown-items text-light">Typography</a>
+                          </li>
+                        </ul>
+                        
+                      </div>
+                      <div class="col-6 col-md-3">
+                        <h6 class="dropdown-title">ELEMENTS #2</h6>
+                        <ul class="list-unstyled">
+                          <li>
+                            <a href="#" class="dropdown-items text-light">Countdown</a>
+                          </li>
+                          <li>
+                            <a href="#" class="dropdown-items text-light">Animated Counter</a>
+                          </li>
+                          <li>
+                            <a href="#" class="dropdown-items text-light">Number Counter</a>
+                          </li>
+                          <li>
+                            <a href="#" class="dropdown-items text-light">Circles Counter</a>
+                          </li>
+                        </ul>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-uppercase text-light" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Blog
+                  </a>
+                  <ul class="dropdown-content dropdown-menu bg-gray">
+                    <li><a class="dropdown-items text-light" href="#">Post Formats</a></li>
+                    <li><a class="dropdown-items text-light" href="#">Blog Layouts</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-uppercase" aria-current="page" href="#">Contacts</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>    
+      </div>
+    </div>
+    <!--Auto banner-->
+    <div class="banner">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="public/images/slider-slide-1-1920x1080.jpg" class="d-block w-100 banner-mobile" alt="...">
+            <div class="carousel-caption d-block banner-tittle">
+              <div class="decoration-middle"></div>
+              <h1 class="pt-1 pt-md-0">Construction</h1>
+              <p>See how a 10-stories tower's being built, in a time-lapse!</p>
+              <a class="btn btn-yellow hover-dark text-uppercase mt-md-5 mt-0" href="#">See Our Recent Projects</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="public/images/slider-slide-2-1920x1080.jpg" class="d-block w-100 banner-mobile" alt="...">
+            <div class="carousel-caption d-block banner-tittle">
+              <div class="decoration-middle"></div>
+              <h1 class="pt-1 pt-md-0">Discounts</h1>
+              <p>Summer discounts for big construction projects!</p>
+              <a class="btn btn-yellow hover-dark text-uppercase mt-md-5 mt-0" href="#">See Our Recent Projects</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="public/images/slider-slide-3-1920x1080.jpg" class="d-block w-100 banner-mobile" alt="...">
+            <div class="carousel-caption d-block banner-tittle">
+              <div class="decoration-middle"></div>
+              <h1 class="pt-1 pt-md-0">Projects</h1>
+              <p>This year we took more complex constructions than ever before...</p>
+              <a class="btn btn-yellow hover-dark text-uppercase mt-md-5 mt-0" href="#">See Our Recent Projects</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <!--Our services-->
+    <section>
+      <div class="container py-5">
+        <div class="title">
+          <div class="col-12">
+            <div class="decoration-middle"></div>
+            <h3 class="text-uppercase text-center p-4 p-md-5">Our Services</h3>
+          </div>
+        </div>
+        <div class="d-md-flex text-md-start text-center">
+          <div class="col-12 col-md-4 d-md-flex">
+            <div class="col-md-3 col-12">
+              <div class="icon p-md-0 p-2">
+                <div class="border-circle pb-4">
+                  <span class="far fa-edit text-light fs-1 icon-circle text-center overline">
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9 col-12">
+              <div class="detail ps-md-1 pe-md-3">
+                <a href="#" class="text-uppercase text-decoration-none text-dark hover-yellow">Pre-construction
+                  Services</a>
+                <p class="font-18 py-3">We take our time on initial planning before any construction begins, to balance all
+                  the financial
+                  and efficiency issues beforehand...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 d-md-flex">
+            <div class="col-md-3 col-12">
+              <div class="icon">
+                <div class="border-circle pb-4">
+                  <span class="fas fa-users text-light fs-1 icon-circle text-center overline">
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9 col-12">
+              <div class="detail ps-md-1 pe-md-3">
+                <a href="#" class="text-uppercase text-decoration-none text-dark hover-yellow">Construction
+                  Services</a>
+                <p class="font-18 py-3">Our customers love the pace/quality tempo that we show during each of the principal
+                  construction processes!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 d-md-flex">
+            <div class="col-md-3 col-12">
+              <div class="icon">
+                <div class="border-circle pb-4">
+                  <span class="fas fa-swatchbook text-light fs-1 icon-circle text-center overline">
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9 col-12">
+              <div class="detail ps-md-1 pe-md-3">
+                <a href="#" class="text-uppercase text-decoration-none text-dark hover-yellow">Construction
+                  Services</a>
+                <p class="font-18 py-3">Our customers love the pace/quality tempo that we show during each of the principal
+                  construction processes!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-md-flex text-md-start text-center">
+          <div class="col-12 col-md-4 d-md-flex">
+            <div class="col-md-3 col-12">
+              <div class="icon">
+                <div class="border-circle pb-4">
+                  <span class="fas fa-city text-light fs-1 icon-circle text-center overline">
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9 col-12">
+              <div class="detail ps-md-1 pe-md-3">
+                <a href="#" class="text-uppercase text-decoration-none text-dark hover-yellow">Construction
+                  Management</a>
+                <p class="font-18 py-3">Construction project management is essential. We're using the most time and
+                  iterations efficient life cycles methods for that.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 d-md-flex">
+            <div class="col-md-3 col-12">
+              <div class="icon">
+                <div class="border-circle pb-4">
+                  <span class="fas fa-home text-light fs-1 icon-circle text-center overline">
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9 col-12">
+              <div class="detail ps-md-1 pe-md-3">
+                <a href="#" class="text-uppercase text-decoration-none text-dark hover-yellow">Building
+                  Information Modeling (BIM)</a>
+                <p class="font-18 py-3">Oftentimes physical and functional essence of any construction project needs to be
+                  represented digitally, in a 3D model format.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 d-md-flex">
+            <div class="col-md-3 col-12">
+              <div class="icon">
+                <div class="border-circle pb-4">
+                  <span class="fas fa-pencil-ruler text-light fs-1 icon-circle text-center overline">
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9 col-12">
+              <div class="detail ps-md-1 pe-md-3">
+                <a href="#"
+                  class="text-uppercase text-decoration-none text-dark hover-yellow">Design-Build</a>
+                <p class="font-18 py-3">If a project is not too complex, we may hire a designer-builder type of contractor,
+                  to make the longevity of the construction shorter</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Our history-->
+    <section class="py-5 bg-gray-white">
+      <div class="container py-md-5 py-2">
+        <div class="row text-start">
+          <div class="col-12 col-md-6 pe-md-5">
+            <div class="decoration-left"></div>
+            <h3 class="text-uppercase my-4">Our History</h3>
+            <p class="mt-md-5 mt-2 text-uppercase font-w4 text-dark">Our construction company has been founded 10 years
+              ago, at the
+              very peak of the building frenzy in the
+              US...</p>
+            <p class="color-gray">Since then we've built hundreds of commercial, government and private buildings and
+              facilities. It may
+              not sound like a lot, but if you estimate the manpower, working hours, materials, planning and correlating
+              that were all involved in completing each separate project, then our productivity is immense!</p>
+            <a href="#" class="btn btn-yellow hover-dark text-uppercase mt-md-5 mt-1 mb-3">Read more</a>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="public/images/home-1-652x491.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Grid Projects-->
+    <section class="project">
+      <div class="container-fluid">
+        <div class="d-md-flex">
+          <div class="col-md-3">
+            <div class="box-container">
+              <div class="box-item">
+                <div class="flip-box">
+                  <div class="flip-box-front text-center d-none d-md-block" style="background-image: url('public/images/project-1-480x361.jpg');">
+                    <div class="inner">
+                      <a href="#" class="fs-4 text-decoration-none text-light">COMMERCIAL</a>
+                    </div>
+                  </div>
+                  <div class="flip-box-back text-center" style="background-image: url('public/images/project-1-480x361.jpg');">
+                    <div class="inner color-white">
+                      <a href="#" class="fs-4 text-decoration-none text-light">COMMERCIAL</a>
+                      <div class="font-18 mb-3 mt-2 text-light">It’s probably the most diverse category of construction to work in. But we’ve got experience…</div>
+                      <a href="#" class="text-light text-uppercase">View project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box-container">
+              <div class="box-item">
+                <div class="flip-box">
+                  <div class="flip-box-front text-center d-none d-md-block" style="background-image: url('public/images/project-2-480x361.jpg');">
+                    <div class="inner color-white">
+                      <a href="#" class="fs-4 text-decoration-none text-light">CULTURAL / LIFESTYLE</a>
+                    </div>
+                  </div>
+                  <div class="flip-box-back text-center" style="background-image: url('public/images/project-2-480x361.jpg');">
+                    <div class="inner color-white">
+                      <a href="#" class="fs-4 text-decoration-none text-light">CULTURAL / LIFESTYLE</a>
+                      <div class="font-18 mb-3 mt-2 text-light">Working on a socially important building, such as a park involves additional landscape construction expertise.…</div>
+                      <a href="#" class="text-light text-uppercase">View project</a>   
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Lat the-->
+          </div>
+          <div class="col-md-3">
+            <div class="box-container">
+              <div class="box-item">
+                <div class="flip-box">
+                  <div class="flip-box-front text-center d-none d-md-block" style="background-image: url('public/images/project-3-480x361.jpg');">
+                    <div class="inner color-white">
+                      <a href="#" class="fs-4 text-decoration-none text-light">DATA / TECHNOLOGY</a>
+                    </div>
+                  </div>
+                  <div class="flip-box-back text-center" style="background-image: url('public/images/project-3-480x361.jpg');">
+                    <div class="inner color-white">
+                      <a href="#" class="fs-4 text-decoration-none text-light">DATA / TECHNOLOGY</a>
+                   <div class="font-18 mb-3 mt-2 text-light">While building a headquarters building for an IT company is relatively easy, we’ve also…</div>
+                   <a href="#" class="text-light text-uppercase">View project</a> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box-container">
+              <div class="box-item">
+                <div class="flip-box">
+                  <div class="flip-box-front text-center d-none d-md-block" style="background-image: url('public/images/project-4-480x361.jpg');">
+                    <div class="inner color-white">
+                      <a href="#" class="fs-4 text-decoration-none text-light">EDUCATIONAL</a>
+                    </div>
+                  </div>
+                  <div class="flip-box-back text-center" style="background-image: url('public/images/project-4-480x361.jpg');">
+                    <div class="inner color-white">
+                      <a href="#" class="fs-4 text-decoration-none text-light">EDUCATIONAL</a>
+                      <div class="font-18 mb-3 mt-2 text-light">Educational institutions can be much more creative than your regular school or a college campus!…</div>
+                      <a href="#" class="text-light text-uppercase">View project</a>      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="d-md-flex">
+          <div class="col-md-3">
+            <div class="box-container">
+              <div class="box-item">
+                <div class="flip-box">
+                  <div class="flip-box-front text-center d-none d-md-block" style="background-image: url('public/images/project-5-480x361.jpg');">
+                    <div class="inner color-white">
+                      <a href="#" class="fs-4 text-decoration-none text-light">GOVERNMENT / MILITARY</a>
+                    </div>
+                  </div>
+                  <div class="flip-box-back text-center" style="background-image: url('public/images/project-5-480x361.jpg');">
+                    <div class="inner color-white">
+                      <a href="#" class="fs-4 text-decoration-none text-light">GOVERNMENT / MILITARY</a>
+                      <div class="font-18 mb-3 mt-2 text-light">The US military and States governments used our expertise and manpower to build numerous military-grade…</div>
+                      <a href="#" class="text-light text-uppercase">View project</a>      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box-container">
+              <div class="box-item">
+                <div class="flip-box">
+                  <div class="flip-box-front text-center d-none d-md-block" style="background-image: url('public/images/project-6-480x361.jpg');">
+                    <div class="inner color-white">
+                      <a href="#" class="fs-4 text-decoration-none text-light">HEALTHCARE</a>
+                    </div>
+                  </div>
+                  <div class="flip-box-back text-center" style="background-image: url('public/images/project-6-480x361.jpg');">
+                    <div class="inner color-white">
+                      <a href="#" class="fs-4 text-decoration-none text-light">HEALTHCARE</a>
+                      <div class="font-18 mb-3 mt-2 text-light">We can build any type of healthcare buildings. From a small private medical clinic to…</div>
+                      <a href="#" class="text-light text-uppercase">View project</a>          
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box-container">
+              <div class="box-item">
+                <div class="flip-box">
+                  <div class="flip-box-front text-center d-none d-md-block" style="background-image: url('public/images/project-7-480x361.jpg');">
+                    <div class="inner color-white">
+                      <a href="#" class="fs-4 text-decoration-none text-light">MANUFACTURING / INDUSTRIAL</a>
+                    </div>
+                  </div>
+                  <div class="flip-box-back text-center" style="background-image: url('public/images/project-7-480x361.jpg');">
+                    <div class="inner color-white">
+                      <a href="#" class="fs-4 text-decoration-none text-light">MANUFACTURING / INDUSTRIAL</a>
+                   <div class="font-18 mb-3 mt-2 text-light">Building a manufacturing facility or a factory house can be much more challenging than building…</div>
+                   <a href="#" class="text-light text-uppercase">View project</a>         
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box-container">
+              <div class="box-item">
+                <div class="flip-box">
+                  <div class="flip-box-front text-center d-none d-md-block" style="background-image: url('public/images/project-8-480x361.jpg');">
+                    <div class="inner color-white">
+                      <a href="#" class="fs-4 text-decoration-none text-light">WAREHOUSE / LOGISTICS</a>
+                    </div>
+                  </div>
+                  <div class="flip-box-back text-center" style="background-image: url('public/images/project-8-480x361.jpg');">
+                    <div class="inner color-white">
+                      <a href="#" class="fs-4 text-decoration-none text-light">WAREHOUSE / LOGISTICS</a>
+                      <div class="font-18 mb-3 mt-2 text-light">While building a warehouse for an e-store is no easy feat itself, think about building…</div>
+                      <a href="#" class="text-light text-uppercase">View project</a>      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Recent news-->
+    <section>
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col">
+            <div class="decoration-middle"></div>
+            <h3 class="text-uppercase text-center font-title pt-3">Recent News</h3>
+          </div>
+        </div>
+        <div class="row py-md-5 py-3">
+          <div class="col-12 col-md-4">
+            <img src="public/images/home-post-1-418x315.jpg" alt="" class="img-fluid">
+            <div class="title-news text-uppercase mt-3">
+              <a href="#" class="text-decoration-none text-dark hover-yellow font-18">Future proofing hospitals</a>
+            </div>
+            <div class="date-author mt-3">
+              <a href="#" class="text-decoration-none color-yellow hover-gray fst-italic font-14">Jan.20, 2021</a>
+              <a href="#" class="text-decoration-none color-gray hover-yellow fst-italic font-14 ms-3">by Brian
+                Williamson</a>
+            </div>
+            <div class="content-news mt-3">
+              <p>By improving the physical layout of hospitals and medical facilities, we can enhance and increase
+                safety mechanisms, improve care, and…</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="public/images/home-post-2-418x315.jpg" alt="" class="img-fluid">
+            <div class="title-news text-uppercase mt-3">
+              <a href="#" class="text-decoration-none text-dark hover-yellow font-18">Bike parts warehouse, DE</a>
+            </div>
+            <div class="date-author mt-3">
+              <a href="#" class="text-decoration-none color-yellow hover-gray fst-italic font-14">Jan.20, 2021</a>
+              <a href="#" class="text-decoration-none color-gray hover-yellow fst-italic font-14 ms-3">by Brian
+                Williamson</a>
+            </div>
+            <div class="content-news mt-3">
+              <p>Delaware proved to be a very friendly place to work at… While invited there for completing a
+                mid-sized warehouse for…</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="public/images/home-post-3-418x315.jpg" alt="" class="img-fluid">
+            <div class="title-news text-uppercase mt-3">
+              <a href="#" class="text-decoration-none text-dark hover-yellow font-18">Joy Hotel & Casino</a>
+            </div>
+            <div class="date-author mt-3">
+              <a href="#" class="text-decoration-none color-yellow hover-gray fst-italic font-14">Jan.20, 2021</a>
+              <a href="#" class="text-decoration-none color-gray hover-yellow fst-italic font-14 ms-3">by Brian
+                Williamson</a>
+            </div>
+            <div class="content-news mt-3">
+              <p>This hotel & casino complex is our most recent completed building… The whole structure that took us 6
+                months to…</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <!-- Pre footer -->
+    <div class="bg-gray-light py-3 py-md-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-sm-6 col-12 pe-5">
+            <a href="#"><img src="public/images/logo-inverse-659x78.png" class="img-fluid py-3" alt="logo"></a>
+            <p class="color-gray pt-md-4 pt-0">Construction's core values have been shaped over more than 10 years of delivering the
+              finest construction
+              services to our clients. They stood to the test of time and these principles remain our bedrock lynchpins.
+              We never tried to cut on either quality, the pace of work or any other construction aspect. We stay true to
+              our full promise of efficiency!
+            </p>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-12 pt-2 pt-md-4 pe-2">
+            <h6 class="font-end">Navigation</h6>
+            <ul class="list-inline pt-md-4 pt-0">
+              <li class="mb-3">
+                <a href="#" class="text-decoration-none color-yellow hover-white">Industry News</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-decoration-none color-yellow hover-white">Projects in Development</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-decoration-none color-yellow hover-white">Our Services</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-decoration-none color-yellow hover-white">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-12 pt-2 pt-md-4 pe-2">
+            <h6 class="font-end">Recent Comments</h6>
+            <ul class="list-inline pt-0 pt-md-4">
+              <li class="pb-1">
+                <span class="fst-italic font-14">Brian Williamson on</span>
+              </li>
+              <li class="pb-3">
+                <a href="#" class="text-decoration-none text-white hover-yellow">Construction's core values have been
+                  shaped over more than 10 years of</a>
+              </li>
+              <li class="pb-1">
+                <span class="fst-italic font-14">Brian Williamson on</span>
+              </li>
+              <li class="pb-3">
+                <a href="#" class="text-decoration-none text-white hover-yellow">Construction's core values have been
+                  shaped over more than 10 years of</a>
+              </li>
+              <li class="pb-1">
+                <span class="fst-italic font-14">Brian Williamson on</span>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white hover-yellow">How to save 10 grand a year with digital
+                  blueprints</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-12 pt-2 pt-md-4 pe-2">
+            <h6 class="font-end">Contacts</h6>
+            <ul class="list-inline pt-0 pt-md-4">
+              <li>
+                <p>Address: 4578 Marmora Road, Glasgow, D04 89GR</p>
+              </li>
+              <li>
+                <p>Phones: <span>(800) 123-0045; (800) 123-0045</span></p>
+              </li>
+              <li>
+                <p>E-mail: <a href="#" class="color-yellow hover-white text-decoration-none">info@demolink.org</a></p>
+              </li>
+              <li>
+                <p>We are open Mn-Fr: 10 am-8 pm</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Information footer -->
+    <div class="bg-gray py-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 text-md-start text-center pt-3 pt-md-0" style="align-self: center">
+            Construction 2021. All Rights Reserved
+          </div>
+          <div class="col-12 col-md-6">
+            <ul class="list-inline d-flex justify-content-center justify-content-md-end">
+              <li><a href="#" class="fa fa-facebook text-white text-decoration-none pe-3 hover-yellow"></a></li>
+              <li><a href="#" class="fab fa-twitter text-white text-decoration-none pe-3 hover-yellow"></a></li>
+              <li><a href="#" class="fab fa-google-plus-g text-white text-decoration-none pe-3 hover-yellow"></a></li>
+              <li><a href="#" class="fa fa-vimeo text-white text-decoration-none pe-3 hover-yellow"></a></li>
+              <li><a href="#" class="fa fa-youtube text-white text-decoration-none pe-3 hover-yellow"></a></li>
+              <li><a href="#" class="fa fa-pinterest text-white text-decoration-none pe-3 hover-yellow"></a></li>
+            </ul>  
+          </div>  
+        </div>
+      </div>  
+    </div>
+  </footer>
+  <a href="#top" class="fas fa-chevron-up to-top hover-dark text-light"></a>
+  <script src="public/js/script.js"></script>
+  <script src="public/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
